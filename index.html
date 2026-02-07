@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For My Love Hasnain Laghari ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg,#ff9a9e,#fad0c4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.card {
+  background: white;
+  width: 320px;
+  padding: 25px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+button {
+  border: none;
+  padding: 12px 22px;
+  border-radius: 25px;
+  font-size: 16px;
+  margin: 8px;
+}
+
+#yesBtn {
+  background: #ff4d88;
+  color: white;
+}
+
+#noBtn {
+  background: #e0e0e0;
+  position: absolute;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <h2>Dear Hasnain Laghari😚💖</h2>
+  <h3>Will you be my life partner forever <br>and will you love me infinity until your last breathe?</h3>
+
+  <button id="yesBtn">Yes 💞</button>
+  <button id="noBtn">No 🙈</button>
+</div>
+
+<script>
+const noBtn = document.getElementById("noBtn");
+const yesBtn = document.getElementById("yesBtn");
+
+function moveNo() {
+  const x = Math.random() * (window.innerWidth - 100);
+  const y = Math.random() * (window.innerHeight - 50);
+  noBtn.style.left = x + "px";
+  noBtn.style.top = y + "px";
+}
+
+noBtn.addEventListener("touchstart", moveNo);
+noBtn.addEventListener("mouseover", moveNo);
+
+yesBtn.addEventListener("click", () => {
+  document.body.innerHTML = `
+    <div class="card">
+      <h2>🤗🌸💞</h2>
+      <h3>Yay! You said YES 💕</h3>
+      <p>
+      Congratulations Hasnain😚!
+       <br>I'm so lucky to have you Alhumdulillah 🫀 🫂<br>This moment just became a beautiful memory ✨<br><br>
+        You are my today, my tomorrow, and my forever.<br>
+        Thank you for being my love, my best friend.<br><br>
+        I love you endlessly ❤️💖<br><br>
+              Your wife,<br>
+             Rida Hasnain Laghari🫀😚
+      </p>
+    </div>
+  `;
+});
+</script>
+
+</body>
+</html> 
